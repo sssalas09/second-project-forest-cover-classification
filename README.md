@@ -25,8 +25,11 @@ df_type_7 = X_train[X_train['Cover_Type'] == 7]
 I've tried to make a function (only works for this specific notebook since I did not want to have it to have too many arguments) and it looked like this:
 
 def df_per_class(i):
+
     while i in range(7):
+    
         df = X_train[X_train['Cover_Type'] == i]
+        
         return df
 
 df_1 = df_per_class(1)
